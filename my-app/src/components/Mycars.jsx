@@ -6,7 +6,7 @@ export class Mycars extends Component {
   render() {
     return (
       <div>
-       <h1> {this.props.titre}</h1>
+       <h1 style={{color: this.props.cocolor}} > {this.props.tititre}</h1>
         {/* <h1>Mon Catalogue de voiture</h1> */}
       <Cars color="red">Toyota </Cars>
       <Cars color="blue">Renault </Cars>

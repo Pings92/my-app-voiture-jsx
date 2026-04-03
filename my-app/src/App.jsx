@@ -5,15 +5,15 @@ import Mycars from './components/Mycars'
 class App extends Component {
   state = {
     titre: 'Mon catalogue de voitures',
-    color: 'blue',
+    color: '#c2343467',
   }
   render(){
     return (
       <div className="App">
 
         <Mycars
-          titre={this.state.titre}
-          color={this.state.color}
+          tititre={this.state.titre}
+          cocolor={this.state.color}
         />
       </div>
     )
