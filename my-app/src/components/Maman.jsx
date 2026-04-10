@@ -7,9 +7,9 @@ class Maman extends Component {
             messageMaman: "Maman m'a dit de faire mes devoirs",
         })   
     }
-    ordreToto = () => {
+    responseToto = () => {
         this.setState({
-            messageToto: "Toto a dit de faire les devoirs",
+            messageToto: "Toto dit NON!",
         })
     }
     state = {
@@ -23,10 +23,10 @@ class Maman extends Component {
                 <h1>Maman</h1>
                 <button onClick={this.ordreMaman}>Ordre de la mère</button>
                 <p>{this.state.messageMaman}</p>
-                {/* <button onClick={this.ordreToto}>Ordre de Toto</button>
+                {/* <button onClick={this.responseToto}>Ordre de Toto</button>
                 <p>{this.state.messageToto}</p> */}
                 <hr />
-                <Toto name="Toto" leState={this.state}/>
+                <Toto name="Toto" responseToto2={this.responseToto} leState={this.state}/>
             </div>
         )
     }
