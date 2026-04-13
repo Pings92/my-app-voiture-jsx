@@ -1,18 +1,18 @@
-const Car = ({color, children, year}) => {
+import react from 'react';
+import car from'./image/car.png';
 
-    const colorInfo = color ? <p>Couleur: {color}</p> : <p>Couleur: "Néant"</p>;
-
-    if (children) {
-        return (
-            <div style={ {backgroundColor: 'pink', width: '400px', padding: '10px', margin: '5px auto'} }>
-                <p>Marque: { children }</p>
-                <p>Année: { year }</p>
-                {colorInfo}
-            </div>
-        )
-    }
-
-    // return null // ce return est Facultatif
-}
-
-export default Car
+const Cars =() => {
+    return(
+    <img src={car} alt="Car" width="150px" />
+    // <svg width="512" height="512" xmlns="http://www.w3.org/2000/svg">
+    //     <g>
+    //     <title>background</title>
+    //     rect fill="none" id="canvas_background" height="402" width="200"
+    //     </g>
+    //     <g>
+    //         <title>Layer 1</title>
+    //         <path fill="#2222222" fill-rule="nonzero" stroke-width="12.25"/>
+    //     </g>
+    // </svg>
+)}
+export default Cars;

@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import Toto from './Toto';
+import Compteur from './Compteur';
 
 class Maman extends Component {
     ordreMaman = () => {
@@ -27,7 +28,11 @@ class Maman extends Component {
                 <p>{this.state.messageToto}</p> */}
                 <hr />
                 <Toto name="Toto" responseToto2={this.responseToto} leState={this.state}/>
+                <hr />
+                <Compteur />
+
             </div>
+            
         )
     }
 }
